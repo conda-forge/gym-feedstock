@@ -145,4 +145,5 @@ about:
 extra:
   recipe-maintainers:
     - mxr-conda
+    - h-vetinari
     - dsangillo
