@@ -68,7 +68,7 @@ outputs:
       run:
         - python
         - {{ pin_subpackage('gym', exact=True) }}
-        - ALE_py ==0.2.6
+        - atari_py ==0.2.6
         - opencv >=3.0
     test:
       imports:
