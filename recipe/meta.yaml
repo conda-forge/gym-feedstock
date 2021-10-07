@@ -72,7 +72,7 @@ outputs:
         - opencv >=3.0
     test:
       imports:
-        - gym.envs.atari
+        # - gym.envs.atari
 
   - name: gym-box2d
     requirements:
