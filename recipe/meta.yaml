@@ -61,18 +61,18 @@ outputs:
       imports:
         - gym
 
-  - name: gym-atari
-    requirements:
-      host:
-        - python
-      run:
-        - python
-        - {{ pin_subpackage('gym', exact=True) }}
-        - atari_py ==0.2.6
-        - opencv >=3.0
-    test:
-      imports:
-        - gym.envs.atari
+  # - name: gym-atari
+  #   requirements:
+  #     host:
+  #       - python
+  #     run:
+  #       - python
+  #       - {{ pin_subpackage('gym', exact=True) }}
+  #       - atari_py ==0.2.6
+  #       - opencv >=3.0
+  #   test:
+  #     imports:
+  #       - gym.envs.atari
 
   - name: gym-box2d
     requirements:
