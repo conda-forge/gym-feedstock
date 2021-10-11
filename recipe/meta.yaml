@@ -50,10 +50,13 @@ outputs:
         - python
       run:
         - python
-        # - {{ pin_subpackage('gym-atari', exact=True) }}
         - {{ pin_subpackage('gym-box2d', exact=True) }}
         - {{ pin_subpackage('gym-classic_control', exact=True) }}
-        # exclude some packages because their dependency (mujoco) has
+        # exclude gym-atari package because the Atari-Py dependency
+        # has been replaced with ALI-py which has not yet been 
+        # packaged in conda-forge
+        # - {{ pin_subpackage('gym-atari', exact=True) }}
+        # exclude some other packages because their dependency (mujoco) has
         # incompatible license, see below
         #- {{ pin_subpackage('gym-mujoco', exact=True) }}
         #- {{ pin_subpackage('gym-robotics', exact=True) }}
@@ -63,6 +66,8 @@ outputs:
 
   - name: gym-atari
     build:
+      # the Atari-Py dependency has been replaced with ALI-Py
+      # which has not yet been packaged in conda-forge
       skip: true
     requirements:
       host:
