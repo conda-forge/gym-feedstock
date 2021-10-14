@@ -141,6 +141,18 @@ outputs:
       imports:
         - gym.envs.robotics
 
+  - name: gym-toy_text
+    requirements:
+      host:
+        - python
+      run:
+        - python
+        - {{ pin_subpackage('gym', exact=True) }}
+        - scipy >=1.4.1
+    test:
+      imports:
+        - gym.envs.toy_text
+
 about:
   home: https://github.com/openai/gym
   license: MIT
