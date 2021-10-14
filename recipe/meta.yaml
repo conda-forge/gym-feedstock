@@ -164,7 +164,7 @@ outputs:
         - opencv-python >=3.0
     test:
       imports:
-        - gym.envs.other
+        # - gym.envs.other
 
 about:
   home: https://github.com/openai/gym
