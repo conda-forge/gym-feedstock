@@ -89,6 +89,7 @@ outputs:
         - python
         - {{ pin_subpackage('gym', exact=True) }}
         - box2d-py ==2.3.8
+        - pyglet >=1.4.0
     test:
       imports:
         - gym.envs.box2d
@@ -99,6 +100,7 @@ outputs:
         - python
       run:
         - python
+        - pyglet >=1.4.0
         - {{ pin_subpackage('gym', exact=True) }}
         # no extra dependencies for this combination
     test:
