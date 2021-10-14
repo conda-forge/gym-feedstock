@@ -176,7 +176,7 @@ outputs:
         - autorom[accept-rom-license] ~=0.4.2
     test:
       imports:
-        # - gym.envs.accept-rom-license
+        - gym.envs.accept-rom-license
 
 about:
   home: https://github.com/openai/gym
