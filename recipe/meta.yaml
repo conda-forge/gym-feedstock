@@ -88,7 +88,7 @@ outputs:
       run:
         - python
         - {{ pin_subpackage('gym', exact=True) }}
-        - box2d-py ==2.3.5
+        - box2d-py ==2.3.8
     test:
       imports:
         - gym.envs.box2d
