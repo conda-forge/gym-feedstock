@@ -166,6 +166,18 @@ outputs:
       imports:
         # - gym.envs.other
 
+  - name: gym-accept-rom-license
+    requirements:
+      host:
+        - python
+      run:
+        - python
+        - {{ pin_subpackage('gym', exact=True) }}
+        - autorom[accept-rom-license] ~=0.4.2
+    test:
+      imports:
+        # - gym.envs.accept-rom-license
+
 about:
   home: https://github.com/openai/gym
   license: MIT
