@@ -89,7 +89,6 @@ outputs:
         - python
         - {{ pin_subpackage('gym', exact=True) }}
         - box2d-py ==2.3.5
-        - piglet >=1.40
     test:
       imports:
         - gym.envs.box2d
