@@ -66,7 +66,7 @@ outputs:
 
   - name: gym-atari
     build:
-      # the Atari-Py dependency has been replaced with ALI-Py
+      # the Atari-Py dependency has been replaced with ALE-Py
       # which has not yet been packaged in conda-forge
       skip: true
     requirements:
@@ -88,7 +88,8 @@ outputs:
       run:
         - python
         - {{ pin_subpackage('gym', exact=True) }}
-        - box2d-py ==2.3.8
+        - box2d-py ==2.3.5
+        - piglet >=1.40
     test:
       imports:
         - gym.envs.box2d
