@@ -153,6 +153,19 @@ outputs:
       imports:
         - gym.envs.toy_text
 
+  - name: gym-other
+    requirements:
+      host:
+        - python
+      run:
+        - python
+        - {{ pin_subpackage('gym', exact=True) }}
+        - lz4 >=3.1.0
+        - opencv-python >=3.
+    test:
+      imports:
+        - gym.envs.other
+
 about:
   home: https://github.com/openai/gym
   license: MIT
