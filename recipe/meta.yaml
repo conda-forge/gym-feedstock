@@ -36,7 +36,7 @@ outputs:
         - python
         - cloudpickle >=1.2.0
         - numpy
-        - importlib_metadata >=4.8.1  # [py<38]
+        - importlib_metadata >=4.8.1  # [py<=39]
     test:
       requires:
         - mock
