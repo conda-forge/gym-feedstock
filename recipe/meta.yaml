@@ -111,34 +111,26 @@ outputs:
         - gym.envs.classic_control
 
   - name: gym-mujoco
-    build:
-      # mujoco-py cannot be packaged for license reasons, see
-      # https://github.com/openai/mujoco-py#install-mujoco
-      skip: true
     requirements:
       host:
         - python
       run:
         - python
         - {{ pin_subpackage('gym', exact=True) }}
-        - mujoco-py >=1.50,<2.0
+        - mujoco
         - imageio
     test:
       imports:
         - gym.envs.mujoco
 
   - name: gym-robotics
-    build:
-      # mujoco-py cannot be packaged for license reasons, see
-      # https://github.com/openai/mujoco-py#install-mujoco
-      skip: true
     requirements:
       host:
         - python
       run:
         - python
         - {{ pin_subpackage('gym', exact=True) }}
-        - mujoco-py >=1.50,<2.0
+        - mujoco
         - imageio
     test:
       imports:
