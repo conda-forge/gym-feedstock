@@ -154,7 +154,9 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-gym--all-green.svg)](https://anaconda.org/conda-forge/gym-all) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gym-all.svg)](https://anaconda.org/conda-forge/gym-all) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gym-all.svg)](https://anaconda.org/conda-forge/gym-all) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gym-all.svg)](https://anaconda.org/conda-forge/gym-all) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-gym--box2d-green.svg)](https://anaconda.org/conda-forge/gym-box2d) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gym-box2d.svg)](https://anaconda.org/conda-forge/gym-box2d) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gym-box2d.svg)](https://anaconda.org/conda-forge/gym-box2d) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gym-box2d.svg)](https://anaconda.org/conda-forge/gym-box2d) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-gym--classic_control-green.svg)](https://anaconda.org/conda-forge/gym-classic_control) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gym-classic_control.svg)](https://anaconda.org/conda-forge/gym-classic_control) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gym-classic_control.svg)](https://anaconda.org/conda-forge/gym-classic_control) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gym-classic_control.svg)](https://anaconda.org/conda-forge/gym-classic_control) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-gym--mujoco-green.svg)](https://anaconda.org/conda-forge/gym-mujoco) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gym-mujoco.svg)](https://anaconda.org/conda-forge/gym-mujoco) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gym-mujoco.svg)](https://anaconda.org/conda-forge/gym-mujoco) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gym-mujoco.svg)](https://anaconda.org/conda-forge/gym-mujoco) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-gym--other-green.svg)](https://anaconda.org/conda-forge/gym-other) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gym-other.svg)](https://anaconda.org/conda-forge/gym-other) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gym-other.svg)](https://anaconda.org/conda-forge/gym-other) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gym-other.svg)](https://anaconda.org/conda-forge/gym-other) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-gym--robotics-green.svg)](https://anaconda.org/conda-forge/gym-robotics) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gym-robotics.svg)](https://anaconda.org/conda-forge/gym-robotics) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gym-robotics.svg)](https://anaconda.org/conda-forge/gym-robotics) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gym-robotics.svg)](https://anaconda.org/conda-forge/gym-robotics) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-gym--toy_text-green.svg)](https://anaconda.org/conda-forge/gym-toy_text) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gym-toy_text.svg)](https://anaconda.org/conda-forge/gym-toy_text) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gym-toy_text.svg)](https://anaconda.org/conda-forge/gym-toy_text) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gym-toy_text.svg)](https://anaconda.org/conda-forge/gym-toy_text) |
 
 Installing gym
@@ -167,16 +169,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `gym, gym-all, gym-box2d, gym-classic_control, gym-other, gym-toy_text` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `gym, gym-all, gym-box2d, gym-classic_control, gym-mujoco, gym-other, gym-robotics, gym-toy_text` can be installed with `conda`:
 
 ```
-conda install gym gym-all gym-box2d gym-classic_control gym-other gym-toy_text
+conda install gym gym-all gym-box2d gym-classic_control gym-mujoco gym-other gym-robotics gym-toy_text
 ```
 
 or with `mamba`:
 
 ```
-mamba install gym gym-all gym-box2d gym-classic_control gym-other gym-toy_text
+mamba install gym gym-all gym-box2d gym-classic_control gym-mujoco gym-other gym-robotics gym-toy_text
 ```
 
 It is possible to list all of the versions of `gym` available on your platform with `conda`:
