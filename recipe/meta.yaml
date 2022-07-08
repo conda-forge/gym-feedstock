@@ -59,7 +59,6 @@ outputs:
         - {{ pin_subpackage('gym-box2d', exact=True) }}
         - {{ pin_subpackage('gym-classic_control', exact=True) }}
         - {{ pin_subpackage('gym-mujoco', exact=True) }}
-        - {{ pin_subpackage('gym-robotics', exact=True) }}
         - {{ pin_subpackage('gym-toy_text', exact=True) }}
         - {{ pin_subpackage('gym-other', exact=True) }}
     test:
@@ -120,19 +119,6 @@ outputs:
     test:
       imports:
         - gym.envs.mujoco
-
-  - name: gym-robotics
-    requirements:
-      host:
-        - python
-      run:
-        - python
-        - {{ pin_subpackage('gym', exact=True) }}
-        - mujoco-python
-        - imageio
-    test:
-      imports:
-        - gym.envs.robotics
 
   - name: gym-toy_text
     requirements:
