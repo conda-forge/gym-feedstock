@@ -1,4 +1,4 @@
-{% set version = "0.24.0" %}
+{% set version = "0.24.1" %}
 
 package:
   name: gym
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/gym/gym-{{ version }}.tar.gz
-  sha256: 69f96424be40d23088be978b61f45c23911e2ccddafad08cf2fac608e8bd86e4
+  sha256: 9b23bbaa96ba0771a16a9f80062edb79b6f176ffdc84f39ea4645b03a8b72291
 
 build:
   number: 0
