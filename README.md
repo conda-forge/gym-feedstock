@@ -19,7 +19,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>Travis</td>
+    <td>
+      <a href="https://app.travis-ci.com/conda-forge/gym-feedstock">
+        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/gym-feedstock/main.svg?label=Linux">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -33,108 +40,129 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_numpy1.19python3.7.____cpython</td>
+              <td>linux_64_numpy1.20python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=linux&configuration=linux_64_numpy1.19python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_numpy1.20python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_numpy1.19python3.8.____cpython</td>
+              <td>linux_64_numpy1.20python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=linux&configuration=linux_64_numpy1.19python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_numpy1.19python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=linux&configuration=linux_64_numpy1.19python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_numpy1.20python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_numpy1.21python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=linux&configuration=linux_64_numpy1.21python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_numpy1.21python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_numpy1.19python3.7.____cpython</td>
+              <td>linux_aarch64_numpy1.20python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=osx&configuration=osx_64_numpy1.19python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.20python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_numpy1.19python3.8.____cpython</td>
+              <td>linux_aarch64_numpy1.20python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=osx&configuration=osx_64_numpy1.19python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.20python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_numpy1.19python3.9.____cpython</td>
+              <td>linux_aarch64_numpy1.21python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=osx&configuration=osx_64_numpy1.19python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.21python3.10.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_numpy1.20python3.8.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy1.20python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_numpy1.20python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy1.20python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_numpy1.21python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy1.21python3.10.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_numpy1.20python3.8.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy1.20python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_numpy1.20python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy1.20python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_numpy1.21python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=osx&configuration=osx_64_numpy1.21python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy1.21python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_numpy1.19python3.8.____cpython</td>
+              <td>osx_arm64_numpy1.20python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_numpy1.19python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy1.20python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_numpy1.19python3.9.____cpython</td>
+              <td>osx_arm64_numpy1.20python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_numpy1.19python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy1.20python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_numpy1.21python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_numpy1.21python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy1.21python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_numpy1.19python3.7.____cpython</td>
+              <td>win_64_numpy1.20python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=win&configuration=win_64_numpy1.19python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy1.20python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_numpy1.19python3.8.____cpython</td>
+              <td>win_64_numpy1.20python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=win&configuration=win_64_numpy1.19python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_numpy1.19python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=win&configuration=win_64_numpy1.19python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy1.20python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_numpy1.21python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9460&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=win&configuration=win_64_numpy1.21python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gym-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy1.21python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
@@ -156,7 +184,6 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-gym--classic_control-green.svg)](https://anaconda.org/conda-forge/gym-classic_control) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gym-classic_control.svg)](https://anaconda.org/conda-forge/gym-classic_control) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gym-classic_control.svg)](https://anaconda.org/conda-forge/gym-classic_control) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gym-classic_control.svg)](https://anaconda.org/conda-forge/gym-classic_control) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-gym--mujoco-green.svg)](https://anaconda.org/conda-forge/gym-mujoco) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gym-mujoco.svg)](https://anaconda.org/conda-forge/gym-mujoco) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gym-mujoco.svg)](https://anaconda.org/conda-forge/gym-mujoco) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gym-mujoco.svg)](https://anaconda.org/conda-forge/gym-mujoco) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-gym--other-green.svg)](https://anaconda.org/conda-forge/gym-other) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gym-other.svg)](https://anaconda.org/conda-forge/gym-other) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gym-other.svg)](https://anaconda.org/conda-forge/gym-other) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gym-other.svg)](https://anaconda.org/conda-forge/gym-other) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-gym--robotics-green.svg)](https://anaconda.org/conda-forge/gym-robotics) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gym-robotics.svg)](https://anaconda.org/conda-forge/gym-robotics) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gym-robotics.svg)](https://anaconda.org/conda-forge/gym-robotics) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gym-robotics.svg)](https://anaconda.org/conda-forge/gym-robotics) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-gym--toy_text-green.svg)](https://anaconda.org/conda-forge/gym-toy_text) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gym-toy_text.svg)](https://anaconda.org/conda-forge/gym-toy_text) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gym-toy_text.svg)](https://anaconda.org/conda-forge/gym-toy_text) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gym-toy_text.svg)](https://anaconda.org/conda-forge/gym-toy_text) |
 
 Installing gym
@@ -169,16 +196,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `gym, gym-all, gym-box2d, gym-classic_control, gym-mujoco, gym-other, gym-robotics, gym-toy_text` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `gym, gym-all, gym-box2d, gym-classic_control, gym-mujoco, gym-other, gym-toy_text` can be installed with `conda`:
 
 ```
-conda install gym gym-all gym-box2d gym-classic_control gym-mujoco gym-other gym-robotics gym-toy_text
+conda install gym gym-all gym-box2d gym-classic_control gym-mujoco gym-other gym-toy_text
 ```
 
 or with `mamba`:
 
 ```
-mamba install gym gym-all gym-box2d gym-classic_control gym-mujoco gym-other gym-robotics gym-toy_text
+mamba install gym gym-all gym-box2d gym-classic_control gym-mujoco gym-other gym-toy_text
 ```
 
 It is possible to list all of the versions of `gym` available on your platform with `conda`:
