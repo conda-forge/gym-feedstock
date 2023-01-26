@@ -1,4 +1,4 @@
-{% set version = "0.22.0" %}
+{% set version = "0.26.2" %}
 
 package:
   name: gym
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/openai/gym/archive/refs/tags/{{ version }}.tar.gz
-  sha256: acff3d469aca4489d67dd2b81797b23a851a076871a623f63ce321cf4dca6141
+  sha256: 96a5fc8345bd92b73a15fc25112d53a294f86fcace1c5e4ef7f0e052b5e1bdf4
 
 build:
   number: 0
