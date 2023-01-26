@@ -41,13 +41,8 @@ outputs:
         - numpy
         - importlib_metadata >=4.8.1  # [py<=39]
     test:
-      requires:
-        - mock
-        - pytest
       imports:
         - gym
-      commands:
-        # TODO: run test suite
 
   - name: gym-all
     requirements:
@@ -65,8 +60,11 @@ outputs:
         - {{ pin_subpackage('gym-toy_text', exact=True) }}
         - {{ pin_subpackage('gym-other', exact=True) }}
     test:
-      imports:
-        - gym
+      requires:
+        - pip
+      commands:
+        - pip check
+        # TODO: run test suite
 
   - name: gym-atari
     build:
