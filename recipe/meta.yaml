@@ -1,12 +1,12 @@
-{% set version = "0.24.0" %}
+{% set version = "0.22.0" %}
 
 package:
   name: gym
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/g/gym/gym-{{ version }}.tar.gz
-  sha256: 69f96424be40d23088be978b61f45c23911e2ccddafad08cf2fac608e8bd86e4
+  url: https://github.com/openai/gym/archive/refs/tags/{{ version }}.tar.gz
+  sha256: acff3d469aca4489d67dd2b81797b23a851a076871a623f63ce321cf4dca6141
 
 build:
   number: 0
@@ -19,6 +19,9 @@ requirements:
     - numpy                                  # [build_platform != target_platform]
   host:
     - python
+    - pip
+    - setuptools
+    - wheel
   run:
     - python
 
@@ -35,16 +38,12 @@ outputs:
       run:
         - python
         - cloudpickle >=1.2.0
+        - gym-notices
         - numpy
         - importlib_metadata >=4.8.1  # [py<=39]
     test:
-      requires:
-        - mock
-        - pytest
       imports:
         - gym
-      commands:
-        # TODO: run test suite
 
   - name: gym-all
     requirements:
@@ -52,23 +51,24 @@ outputs:
         - python
       run:
         - python
-        # exclude gym-atari package because the Atari-Py dependency
-        # has been replaced with ALE-py which has not yet been
-        # packaged in conda-forge, see conda-forge/staged-recipes#16488
+        # see below
         # - {{ pin_subpackage('gym-atari', exact=True) }}
         - {{ pin_subpackage('gym-box2d', exact=True) }}
         - {{ pin_subpackage('gym-classic_control', exact=True) }}
-        - {{ pin_subpackage('gym-mujoco', exact=True) }}
+        # exclude because mujoco has incompatible license, see below
+        # - {{ pin_subpackage('gym-mujoco', exact=True) }}
         - {{ pin_subpackage('gym-toy_text', exact=True) }}
         - {{ pin_subpackage('gym-other', exact=True) }}
     test:
-      imports:
-        - gym
+      requires:
+        - pip
+      commands:
+        - pip check
+        # TODO: run test suite
 
   - name: gym-atari
     build:
-      # the Atari-Py dependency has been replaced with ALE-Py
-      # which has not yet been packaged in conda-forge
+      # FIXME: causes import errors for gym.envs.atari
       skip: true
     requirements:
       host:
@@ -76,7 +76,7 @@ outputs:
       run:
         - python
         - {{ pin_subpackage('gym', exact=True) }}
-        - ale-py >=0.7.1,<0.8
+        - ale-py >=0.7.4
     test:
       imports:
         - gym.envs.atari
@@ -88,8 +88,8 @@ outputs:
       run:
         - python
         - {{ pin_subpackage('gym', exact=True) }}
-        - box2d-py ==2.3.8
-        - pyglet >=1.4.0
+        - box2d-py ==2.3.*
+        - pygame ==2.1.*
     test:
       imports:
         - gym.envs.box2d
@@ -100,20 +100,24 @@ outputs:
         - python
       run:
         - python
-        - pyglet >=1.4.0
         - {{ pin_subpackage('gym', exact=True) }}
-        # no extra dependencies for this combination
+        - pygame ==2.1.*
     test:
       imports:
         - gym.envs.classic_control
 
   - name: gym-mujoco
+    build:
+      # mujoco-py cannot be packaged for license reasons, see
+      # https://github.com/openai/mujoco-py#install-mujoco
+      skip: true
     requirements:
       host:
         - python
       run:
         - python
         - {{ pin_subpackage('gym', exact=True) }}
+        # conda-forge builds for mujoco-python start only from 2.2.0
         - mujoco-python
         - imageio
     test:
@@ -127,6 +131,7 @@ outputs:
       run:
         - python
         - {{ pin_subpackage('gym', exact=True) }}
+        - pygame ==2.1.*
         - scipy >=1.4.1
     test:
       imports:
@@ -144,18 +149,6 @@ outputs:
     test:
       imports:
         # There are no tests in the source code for gym-other
-
-  # - name: gym-accept-rom-license
-  #   requirements:
-  #     host:
-  #       - python
-  #     run:
-  #       - python
-  #       - {{ pin_subpackage('gym', exact=True) }}
-  #       - autorom[accept-rom-license] ~=0.4.2
-  #   test:
-  #     imports:
-  #       # There are no tests in the source code for gym-accept-rom-license
 
 about:
   home: https://github.com/openai/gym
