@@ -54,7 +54,8 @@ outputs:
         # - {{ pin_subpackage('gym-atari', exact=True) }}
         - {{ pin_subpackage('gym-box2d', exact=True) }}
         - {{ pin_subpackage('gym-classic_control', exact=True) }}
-        - {{ pin_subpackage('gym-mujoco', exact=True) }}
+        # exclude because mujoco has incompatible license, see below
+        # - {{ pin_subpackage('gym-mujoco', exact=True) }}
         - {{ pin_subpackage('gym-toy_text', exact=True) }}
         - {{ pin_subpackage('gym-other', exact=True) }}
     test:
@@ -105,6 +106,10 @@ outputs:
         - gym.envs.classic_control
 
   - name: gym-mujoco
+    build:
+      # mujoco-py cannot be packaged for license reasons, see
+      # https://github.com/openai/mujoco-py#install-mujoco
+      skip: true
     requirements:
       host:
         - python
