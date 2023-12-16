@@ -9,7 +9,7 @@ source:
   sha256: acff3d469aca4489d67dd2b81797b23a851a076871a623f63ce321cf4dca6141
 
 build:
-  number: 0
+  number: 1
 
 # Need these up here for conda-smithy to handle them properly.
 requirements:
